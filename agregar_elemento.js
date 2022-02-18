@@ -5,6 +5,10 @@ Arreglo inicial:
 */
 let arreglo=[ "Primero", "Segundo", "Tercero", "Cuarto"];
 arreglo.push("Soy el último elemento");
+
+function imprimir(elemento){
+  return elemento
+}
 for(let i=0;i<arreglo.length;i++){
-  console.log(arreglo[i]);
+  console.log(imprimir(arreglo[i]));
 }
