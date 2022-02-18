@@ -6,4 +6,6 @@ var newArray = ["Quinto", "Sexto"];
 */
 let arr = ["Primero", "Segundo", "Tercero", "Cuarto", "Soy el último elemento"],newArray = ["Quinto", "Sexto"];
 arr.splice(4,0,newArray[0],newArray[1])
-console.log(arr)
+for(i=0;i<arr.length;i++){
+  console.log(arr[i]);
+}
