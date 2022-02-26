@@ -7,13 +7,22 @@ Casos para probar tu programa
 console.log(capitalize("pedro perez")); // "Pedro Perez"
 console.log(capitalize("make it real")); // "Make It Real"
 
-*/
+//opxion 1 (reemplazar los datos en cada posicion)
 function capitalize (cadena){
   cadena=cadena.split(" ")// convertir el dato de entrada en un arreglo
   for(i=0;i<cadena.length;i++){ // ejecutar el for de acuerdo a la longuitud del arreglo
   cadena.splice(i,1,cadena[i][0].toUpperCase()+cadena[i].substr(1));//reemplazar cada posicion con la priemra letra convertida a mayuscula y luego concatenando los siguientes datos
 }
 return cadena.join(" ");// al final se retorna es arreglo obtenido pero uniendolos y con ello pasandolo a una cadena de texto separada por espacios
+}*/
+
+//opcion 2 (reemplazar los datos en cada posicion)
+function capitalize (cadena){
+  cadena=cadena.split(" ");// convertir el dato de entrada en un arreglo
+for(let i=0;i<cadena.length;i++){
+  cadena[i]=cadena[i][0].toUpperCase()+cadena[i].substr(1,cadena[i].length-1);
+}
+return cadena.join(" ") 
 }
 console.log(capitalize("pedro perez")); // "Pedro Perez"
 console.log(capitalize("make it real")); // "Make It Real"
